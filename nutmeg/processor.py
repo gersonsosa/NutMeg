@@ -33,6 +33,8 @@ def find_executable(executable, path=None):
 
     paths = path.split(os.pathsep)
 
+    print(paths)
+
     extlist = ['']
     if sys.platform == 'win32':
         pathext = os.environ['PATHEXT'].lower().split(os.pathsep)
